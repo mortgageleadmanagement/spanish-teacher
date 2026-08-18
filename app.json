@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Profesora",
+    "slug": "spanish-teacher",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rossmcfarlane.spanishteacher",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Profesora listens to you so you can practise speaking Spanish.",
+          "speechRecognitionPermission": "Profesora transcribes your voice so the lesson can respond to what you say."
+        }
+      ],
+      "expo-audio",
+      "expo-secure-store"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
